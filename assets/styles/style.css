@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anta', cursive;
+    background-color: #111;
+    color: white;
+    padding: 15px;
+}
+
+.site-header {
+    border: 2px solid rgb(189, 199, 4);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    color: rgb(189, 199, 4);
+    margin-bottom: 15px;
+}
+
+
+.main-nav {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: rgb(189, 199, 4);
+}
+
+.main-nav li:first-child a {
+    color: rgb(189, 199, 4);
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    border: 2px solid rgb(189, 199, 4);
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+.image-block {
+    border: 2px solid rgb(189, 199, 4);
+    padding: 10px;
+}
+
+.image-block img {
+    width: 100%;
+    display: block;
+}
+
+
+.text-block {
+    border: 2px solid rgb(189, 199, 4);
+    padding: 20px;
+    text-align: justify;
+}
+
+.text-block h2 {
+    margin-bottom: 15px;
+    color: rgb(189, 199, 4);
+}
+
+.text-block p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+.roster-list {
+    padding-left: 20px;
+}
+
+.roster-list li {
+    margin-bottom: 10px;
+}
+
+.roster-list li:hover {
+    color: rgb(189, 199, 4);
+}
+
+.site-footer {
+    border: 2px solid rgb(189, 199, 4);
+    padding: 20px;
+    text-align: center;
+}
+
+/* desktop styles */
+@media (min-width: 768px) {
+
+    .main-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content-block {
+        flex-direction: row;
+    }
+
+    .image-block,
+    .text-block {
+        flex: 1;
+    }
+}
